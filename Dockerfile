@@ -4,12 +4,13 @@ FROM amancevice/pandas:0.18.1-python3
 ENV SUPERSET_VERSION 0.15.1
 RUN apk add --no-cache \
         curl \
+        git \
         libffi-dev \
         cyrus-sasl-dev \
         mariadb-dev \
         postgresql-dev && \
     pip3 install \
-        superset==$SUPERSET_VERSION \
+        git+https://github.com/yokotty/superset.git \
         mysqlclient==1.3.7 \
         ldap3==2.1.1 \
         psycopg2==2.6.1 \
