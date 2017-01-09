@@ -11,3 +11,10 @@ CACHE_CONFIG = {
     'CACHE_REDIS_URL': 'redis://redis:6379/1'}
 SQLALCHEMY_DATABASE_URI = 'mysql://superset:superset@mysql:3306/superset'
 SECRET_KEY = 'thisISaSECRET_1234'
+BABEL_DEFAULT_LOCALE = 'en'
+LANGUAGES = {
+    'en': {'flag': 'us', 'name': 'English'},
+    'ja': {'flag': 'ja', 'name': 'Japanese'},
+    # 'fr': {'flag': 'fr', 'name': 'French'},
+    # 'zh': {'flag': 'cn', 'name': 'Chinese'},
+}

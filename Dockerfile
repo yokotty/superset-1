@@ -10,7 +10,7 @@ RUN apk add --no-cache \
         mariadb-dev \
         postgresql-dev && \
     pip3 install \
-        git+https://github.com/yokotty/superset.git \
+        git+https://github.com/yokotty/superset.git@feature/translate-ja \
         mysqlclient==1.3.7 \
         ldap3==2.1.1 \
         psycopg2==2.6.1 \
